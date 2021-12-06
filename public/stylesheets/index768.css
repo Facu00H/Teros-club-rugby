@@ -1,0 +1,498 @@
+
+/*INICIO MAIN*/
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+#imgg{
+background-size: cover;
+    width: 100%;
+    height: 350px;
+    background-position-x: center;
+    background-position-y: center;
+}
+#section{
+width: 90%;
+}
+#section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas:    "title title"
+                            "s1 s2"
+                            "s3 s4"
+                            "s5 s6"
+                            "s7 s8"
+                            "s9 s9";
+    margin:0 auto ;
+    width: 90%;
+    grid-gap: 30px;
+}
+.title2{
+    grid-column-start: title;
+    grid-column-end: title;
+    width: 75%;
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.s1{
+    grid-column-start: s1;
+    grid-column-end: s1;
+}
+.s2{
+    grid-column-start: s2;
+    grid-column-end: s2;
+}
+.s3{
+    grid-column-start: s3;
+    grid-column-end: s3;
+}
+.s4{
+    grid-column-start: s4;
+    grid-column-end: s4;
+}
+.s5{
+    grid-column-start: s5;
+    grid-column-end: s5;
+}
+.s6{
+    grid-column-start: s6;
+    grid-column-end: s6;
+}
+.s7{
+    grid-column-start: s7;
+    grid-column-end: s7;
+}
+.s8{
+    grid-column-start: s8;
+    grid-column-end: s8;
+}
+
+.sponsor-log{
+    width: 100px;
+    height: 100px;
+}
+.sponsor{
+    width: 95%;
+    height: 120px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: grey;
+    transition: 0.7s all ease;
+}
+.sponsor:hover{
+    background-color: #ccc;
+}
+.s9{
+    grid-column-start: s9;
+    grid-column-end: s9;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.contenedor-txt{
+    width:90%;
+    margin: auto;
+}
+.t1{
+    font-size: 35px;
+}
+
+    /*FIN MAIN*/
+
+    /* INICIO SUBCOMISIONES */
+
+    #section6{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        max-width: 1025px;
+        margin: 0 auto;
+        grid-template-areas: "cero cero"
+                             "uno dos"
+                             "tres cuatro"
+                             "cinco seis"
+                             "siete ocho"
+                             "nueve diez"
+                             "once doce"
+                             "trece trece";
+        padding: 20px;
+    }
+    .iconosvg{
+        width: 150px;
+    }
+    .cero{
+        text-align: center;
+        grid-column-start: cero;
+        grid-column-end: cero;
+        width: 75%;
+        margin: 0 auto;
+        border-bottom: 1px solid grey;
+    }
+    .uno{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-column-start: uno;
+        grid-column-end: uno;
+        text-align: center;
+        transform: scale(0.5);
+    }
+    .dos{
+        border: 1px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+         grid-column-start: dos;
+        grid-column-end: dos;
+    }
+    .tres{
+        border: 1px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        grid-column-start: tres;
+        grid-column-end: tres;
+    }
+    .cuatro{
+        border: 1px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        grid-column-start: cuatro;
+        grid-column-end: cuatro;
+    }
+    .cinco{
+        border: 1px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-column-start: cinco;
+        grid-column-end: cinco;
+    }
+    .seis{
+        border: 1px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-column-start: seis;
+        grid-column-end: seis;
+    }
+    .siete{
+        border: 1px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-column-start: siete;
+        grid-column-end: siete;
+    }
+    .ocho{
+        border: 1px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-column-start: ocho;
+        grid-column-end: ocho;
+    }
+    .nueve{
+        border: 1px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-column-start: nueve;
+        grid-column-end: nueve;
+    }
+    .diez{
+        border: 1px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-column-start: diez;
+        grid-column-end: diez;
+    }
+    .once{
+        border: 1px solid black;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-column-start: once;
+        grid-column-end: once;
+    }
+    .doce{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-column-start: doce;
+        grid-column-end: doce;
+    }
+    .trece{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-column-start: trece;
+        grid-column-end: trece;
+    }
+    .caja h4{
+        border-top: 1.5px solid grey;
+        width:75%;
+        padding-top: 15px;
+    }
+    .caja{
+        height: 350px;
+        width: 300px;
+        margin:0 auto;
+        transform: scale(0.5);
+    }
+    .caja a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none; /* No underlines on the link */
+        z-index: 10; /* Places the link above everything else in the div */
+        background-color: #FFF; /* Fix to make div clickable in IE */
+        opacity: 0; /* Fix to make div clickable in IE */
+        filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+    }
+    .caja p{
+        padding: 5px;
+        font-size: 90%;
+    }
+    
+
+    /* FIN SUBCOMISIONES */
+
+    /* INICIO CONTACTO */
+
+    textarea{
+        resize: none;
+    }
+    #section4{
+        overflow-x: hidden;
+    }
+    #contenedor-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "form1"
+                             "form2";
+        grid-gap: none;
+        width: 100%;
+        margin:auto;
+        max-height: 1000px;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+    .formulario1{
+        grid-row-start: form1;
+        grid-row-end: form1;
+        width: 75%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        border: 1px solid #ccc;
+    }
+    .formulario2{
+        grid-row-start: form2;
+        grid-row-end: form2;
+        margin-right: 10px;
+        width: 75%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;;
+    }
+    .link-s{
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    span{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .campo-r::after{
+        content: '*campo obligatorio*';
+        color: red;
+        font-size: 12px;
+    }
+    .caja-datos{
+        width: 85%;
+    }
+    .g-recaptcha{
+        transform: scale(0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        margin-top: 10px;
+        margin-bottom: 16px;
+    }
+
+    /* FIN CONTACTO */
+
+    /* INICIO DEPORTES */
+
+    #section3{
+        width: 90%;
+    }
+
+    /* FIN DEPORTES */
+
+    /* INICIO GRAL SUBCOMISIONES */
+
+    .main{
+        max-width: 734px;
+        margin: auto;
+    }
+    #caja-contenedora{
+        padding: 20px;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .foto{
+        width: 350px;
+        margin: auto;
+        border-radius: 15%;
+        border: 1px solid black;
+    }
+    .elemento1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+    .subelemento1{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+    }
+    .subelemento1 p{
+        text-align: center;
+        font-size: 90%;
+    }
+    .subelemento1 h2{
+        font-size: 30px;
+    }
+    .elemento2{
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        padding: 20px 10px;
+    }
+    .elemento2 h4{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .elemento3{
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        padding: 20px 10px;
+    }
+    .elemento3 ul li{
+        list-style:circle
+    }
+    .elemento3  h4{
+        font-size: 20px;
+        padding: 10px 0 0 0;
+    }
+    .elemento3 p{
+        padding: 10px 0;
+    }
+    .elemento4{
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        padding: 20px 10px;
+    }
+    .elemento4  h4{
+        font-size: 20px;
+        padding: 10px 0 0 0;
+    }
+    .elemento4 p{
+        padding: 10px 0;
+    }
+    .form{
+        width: 100%;
+        max-width: 600%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form input{
+        width: 50%;
+        margin-bottom: 7px;
+    }
+    .form textarea{
+        margin-bottom: 7px;
+        resize: none;
+        width: 80%;
+    }
+    .form p{
+        padding: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .form .required::after{
+        content: '*campo obligatorio*';
+        color: red;
+        font-size: 12px;
+    }
+
+    /* FIN GRAL SUBCOMISIONES */

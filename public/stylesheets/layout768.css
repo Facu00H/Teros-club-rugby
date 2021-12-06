@@ -1,0 +1,193 @@
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+#contenedor{
+    width: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    height: 500px;
+    background-size: cover;
+}
+.centrado{
+    font-size:900%;
+    text-transform:uppercase;
+    font-weight:900;
+    letter-spacing:20px;
+    position: absolute;
+    top: 50%;   
+    left: 17.5%;
+    margin: 0 auto;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-stroke:2px rgb(255, 255, 255);
+    max-height: 500px;
+    color: rgba(27, 27, 27, 0.85);
+    
+}
+.centrado::after {
+    content: " RUGBY CLUB ";
+    font-size:30%;
+    text-transform:uppercase;
+    font-weight:900;
+    letter-spacing:20px;
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    margin: 0 auto;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-stroke:2px rgb(255, 255, 255);
+    width:100%;
+    color: rgba(27, 27, 27, 0.85);
+}
+.centrado::before {
+    content: " LOS ";
+    font-size:30%;
+    text-transform:uppercase;
+    font-weight:900;
+    letter-spacing:20px;
+    position:absolute;
+    top: -15%;
+    margin: 0 auto;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-stroke:2px rgb(255, 255, 255);
+    width:100%;
+    color: rgba(27, 27, 27, 0.85);
+}
+.contenedor-nav{
+    background-color: rgba(27, 27, 27, 1);;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 11.65%;
+    z-index: 1000;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: flex;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    background-color: rgba(27, 27, 27, 1);
+    position: absolute;
+    z-index: -1;
+    border-top: 1px solid #ccc;
+    height: 757%;
+    width: 100%;
+    display: grid;
+    margin-left: -1000%;
+    transition: 1s all ease;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    grid-template-areas: "home home home"
+                         "deportes deportes deportes"
+                         "sponsors sponsors sponsors"
+                         "subcomisiones subcomisiones subcomisiones"
+                         "contacto contacto contacto"
+                         "red1 red2 red3";    
+}
+#btn-menu:checked ~ .nav{
+    margin: 0;
+}
+.e1{
+    grid-column-start: home;
+    grid-column-end: home;
+}
+.e2{
+    grid-column-start: deportes;
+    grid-column-end: deportes;
+}
+.e3{
+    grid-column-start: sponsors;
+    grid-column-end: sponsors;
+}
+.e4{
+    grid-column-start: subcomisiones;
+    grid-column-end: subcomisiones;
+}
+.e5{
+    grid-column-start: contacto;
+    grid-column-end: contacto;
+}
+.e6{
+    grid-column-start: red1;
+    grid-column-end: red1;
+}
+.e7{
+    grid-column-start: red2;
+    grid-column-end: red2;
+}
+.e8{
+    grid-column-start: red3;
+    grid-column-end: red3;
+}
+.items{
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*FIN HEADER*/
+
+/*INICIO FOOTER*/
+
+#footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 45% 5%;
+    overflow: hidden;
+    max-width: 1025px;
+    margin:auto;
+    grid-template-areas: "one two"
+                         "three three"
+                         "four four";
+    height: 600px;
+}
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: one;
+    grid-column-end: one;
+}
+.two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-column-start: two;
+    grid-column-end: two;
+}
+.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-column-start: three;
+    grid-column-end: three;
+}
+.four{
+    grid-column-start: four;
+    grid-column-end: four;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.icono{
+    width: 190px;
+}
