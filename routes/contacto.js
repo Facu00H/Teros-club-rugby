@@ -15,13 +15,12 @@ router.get('/', function(req, res, next) {
     var nombre = req.body.nombre;
     var email = req.body.email;
     var texto = req.body.texto;
-    // console.log(req,body,txr)
     var obj={
       to: 'asd@gmail.com',
       subject: 'Contacto desde x web',
       html: nombre + ' Se contacto a traves de la web y quiere saber mas info a este correo ' + email + ' <br> y su mensaje es: ' + texto + '.',
     }
-    
+
     var teros = nodemailer.createTransport({
       host: process.env.SMTP_HOST, // escribir para que comunique con .env
       port: process.env.SMTP_PORT,
@@ -32,9 +31,11 @@ router.get('/', function(req, res, next) {
     });
     var info = await teros.sendMail(obj);
     res.render('contacto',{
-      message: 'Mensaje enviado correctamente.'
+      message: 'Mensaje enviado correctamente.',
+      isContacto: true
     })
   });
+
 
 
   module.exports = router;

@@ -26,6 +26,7 @@ var sponsorsRouter = require('./routes/sponsors');
 var subcomisionesRouter = require('./routes/subcomisiones');
 var valoresRouter = require('./routes/valores');
 var viajesRouter = require('./routes/viajes');
+var loginRouter = require('./routes/admin/login');
 
 const exp = require('constants');
 
@@ -60,6 +61,7 @@ app.use('/sponsors', sponsorsRouter);
 app.use('/subcomisiones', subcomisionesRouter);
 app.use('/valores', valoresRouter);
 app.use('/viajes', viajesRouter);
+app.use('/admin/login', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
