@@ -7,6 +7,6 @@ router.get('/', function(req, res, next) {
         isNovedades: true
     });
     
-  });
+});
 
-  module.exports = router;
+module.exports = router;

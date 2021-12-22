@@ -1,7 +1,7 @@
-var mysql = require('mysql')
-var util = require('util')
+var mysql = require('mysql');
+var util = require('util');
 
-var pool = mysql.createPool({
+var connection = mysql.createConnection({
     connectionLimit:10,
     host: process.env.MYSQL_HOST,
     user: process.env.MYSQL_USER,
@@ -9,6 +9,6 @@ var pool = mysql.createPool({
     database:process.env.MYSQL_DB_NAME
 })
 
-pool.query = util.promisify(pool.query);
+connection.query=util.promisify(connection.query);
 
-module.exports = pool;
+module.exports = connection;

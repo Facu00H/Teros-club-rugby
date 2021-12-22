@@ -76,7 +76,7 @@ head{
 .contenedor-nav{
     background-color: rgba(27, 27, 27, 1);;
     position: absolute;
-    top: 93%;
+    top: 100%;
     width: 100%;
     height: 35px;
 }

@@ -1,5 +1,10 @@
 <main>
     <div id="contenedor-main">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Selecciona con que comision deseas comunicarte</option>
+            <option value="1">Proximamente...</option>
+        </select>
+        <span>Necesitas ayuda para saber con que comision comunicarte, informate aqui: <a href="/subcomisiones" class="enlace">Subcomisiones</a></span>
         <div class="formulario2">
             <h4>Consultas generales</h4>
             <form action="/contacto" method="post">
@@ -12,20 +17,6 @@
             <div class="g-recaptcha asdasd" data-sitekey="your_site_key"></div>
             <div><input type="submit" placeholder="Enviar"></div>
             </form>
-            <p>{{message}}</p>
-            <span>Para una cuestion mas especifica, busque la subcomion adecuada a la cual realizar la consulta: <a class="link-s" href="subcomisiones.html">Subcomisiones</a></span>
-        </div>
-        <div class="formulario1">
-            <h4>Aportes y/o quejas:</h4>
-            <form action="/contacto" method="post">
-            <p>Nombre y apellido:</p>
-            <input class="caja-datos" type="text" maxlength="25" placeholder="Nombre - Apelldio" name="nombre">
-            <p>Email:</p>
-            <input class="caja-datos" type="email" maxlength="30" placeholder="este-es@un-ejemplo.com" name="email"><br>
-            <p class="campo-r">Su aporte y/o solicitud:<br></p><textarea class="caja-datos" name="texto" required rows="10" cols="25" placeholder="Ej: Me gustaria que hubiese un basurero en X lugar ya que suele haber basura tirada alli..."></textarea>
-            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-            <div><input type="submit" placeholder="Enviar"></div>
-            </form> 
             <p>{{message}}</p>
         </div>
     </div>

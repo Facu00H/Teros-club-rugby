@@ -2,11 +2,16 @@
 
 #principal{
     display: grid;
-    grid-template-columns: 2fr 0.5fr;
+    grid-template-columns: 1.7fr 1.05fr;
     max-width: 1025px;
     column-gap: 50px;
     margin: 15px auto;
     padding: 10px;
+    margin-top: 25px;
+}
+.facebook{
+    width: 100%;
+    height: 100%;
 }
 
 .contenido, .side-bar{
@@ -14,12 +19,20 @@
     margin: 10px 0 10px;
     padding: 10px;
     border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px black;
 }
+
 #imgg{
     height: 560px;
     background: url(../images/imgteros.jpg);
     background-size: cover;
     background-position-y: top;
+}
+#imgg2{
+    height: 560px;
+    background: url(../images/canchateros.jpeg);
+    background-size: cover;
+    background-position-y: 850px;
 }
 .widht{
     max-width: 1025px;
@@ -31,6 +44,16 @@
     margin-top: 25px;
     padding: 10px;
     border: 1px solid #ccc;
+    display:flex;
+    flex-direction: row;
+    box-shadow:2px 2px 5px black;
+}
+.cont-sec{
+    width: 50%;
+    padding: 5px;
+}
+.tit-sec{
+    text-align: center;
 }
 .title{
     text-align: center;
@@ -122,6 +145,7 @@
 .t1{
     font-size: 25px;
 }
+
 
 /* FIN INDEX */
 
@@ -234,9 +258,10 @@
                          "n n n";
     padding: 20px;
     position: static;
+    margin-top: 25px;
 }
 .iconosvg{
-    width: 150px;
+    width: 130px;
     padding: 10px;
 }
 .cero{
@@ -256,7 +281,6 @@
     grid-column-start: b;
     grid-column-end: b;
     text-align: center;
-    transform: scale(0.5);
 }
 .dos{
     border: 1px solid black;
@@ -391,9 +415,11 @@
 .caja{
     height: 350px;
     width: 300px;
+    padding: 5px;
     margin:0 auto;
-    transform: scale(0.5);
     box-shadow: grey 0 5px 10px;
+    transform: scale(0.9);
+    box-shadow: 2px 2px 5px black;
 }
 .caja a{
     position: absolute;
@@ -408,8 +434,9 @@
     filter: alpha(opacity=1); /* Fix to make div clickable in IE */
 }
 .caja:hover{
-    transition: all 2s ease;
+    transition: all 1s ease;
     box-shadow: rgb(46, 46, 46) 0 10px 15px;
+    transform: scale(0.95);
 }
 
 /* FIN SUBCOMISIONES */
@@ -421,43 +448,22 @@ textarea{
 }
 #section4{
     overflow-x: hidden;
+    margin-top: 25px;
 }
 #contenedor-main{
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "form1 form2";
-    grid-gap: none;
     width: 100%;
     max-width: 1025px;
     margin: 0 auto;
     max-height: 600px;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
-}
-.formulario1{
-    grid-row-start: form1;
-    grid-row-end: form1;
-    width: 75%;
-    text-align: center;
+    box-shadow:2px 2px 5px black;
 }
 .formulario2{
     grid-row-start: form2;
     grid-row-end: form2;
     margin-right: 10px;
     text-align: center;
-    border-right: 1px solid #ccc;
-}
-.link-s{
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
-}
-span{
-    font-size: 12px;
-}
-h4{
-    font-size: 20px;
 }
 .campo-r::after{
     content: '*campo obligatorio*';
@@ -473,55 +479,37 @@ h4{
     align-items: center;
     justify-content: center;
 }
-p{
-    margin-top: 10px;
-    margin-bottom: 16px;
+.form-select{
+    margin-bottom: 10px;
+}
+.enlace{
+    color: blue;
+    text-decoration: underline;
 }
 
 /* FIN CONTACTO */
 
 /* INICIO DEPORTES */
 
-.item{
-    background-color: rgb(212, 212, 212);
-    height: 300px;
-    width: 100%;
-    margin: 0 10px 20px ;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  #section3{
+#section3{
     max-width: 1025px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 40px;
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 15px;
-  }
-  .imgfoto{
-    transform: scale(1);
-    margin: 0;
-    text-align: center;
-    object-fit: cover;
-  }
-  .cajaa{
-    position: absolute;
-    visibility: hidden;
-    margin-bottom: 10px;
-  }
-  p,span{
-    margin: 0 0 0 10px;
-  }
-  h4{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .parrafo{
-    margin-bottom: 10px;
-  }
-  
+}
+#contenedorr{
+    display: flex;
+    flex-direction: row;
+}
+.imagen{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10px;
+    margin: auto;
+    margin-top:10px;
+}
 /* FIN DEPORTES */
 
 /* INICIO GRAL SUBCOMISIONES */
@@ -530,9 +518,9 @@ p{
 .main{
     max-width: 1025px;
     margin: auto;
+    margin-top: 45px;
 }
-#caja-contenedora{
-    margin-top: 25px;
+#contenedor-main{
     margin-bottom: 25px;
     border: 1px solid #ccc;
     border-radius: 2%;
@@ -544,6 +532,7 @@ h2{
 }
 .foto{
     width: 350px;
+    height:200px;
     border-radius: 15%;
     border: 1px solid black;
 }
@@ -603,33 +592,6 @@ h2{
 }
 .elemento4 p{
     padding: 10px 0;
-}
-.form{
-    width: 100%;
-    max-width: 600%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.form input{
-    width: 50%;
-    margin-bottom: 7px;
-}
-.form textarea{
-    margin-bottom: 7px;
-    resize: none;
-}
-.form p{
-    padding: 10px;
-    font-weight: bold;
-    font-size: 20px;
-}
-.form .required::after{
-    content: '*campo obligatorio*';
-    color: red;
-    font-size: 12px;
 }
 
 /* FIN GRAL SUBCOMISIONES */

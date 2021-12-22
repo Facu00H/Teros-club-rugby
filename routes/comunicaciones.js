@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
     console.log(req.body.nombre)
     var obj={
       to: 'asd@gmail.com',
-      subject: 'Contacto desde x web',
+      subject: 'Consulta a subcomision de COMUNICACIONES',
       html: nombre + ' Se contacto a traves de la web y quiere saber mas info a este correo ' + email + ' <br> y su mensaje es: ' + texto + '.',
     }
     

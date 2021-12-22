@@ -1,17 +1,30 @@
 
 /*INICIO MAIN*/
 
+.contenido{
+    width: 100%;
+}
+.side-bar{
+    visibility: hidden;
+    width: 0%;
+    height: 350px;
+}
 #principal{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 90%;
 }
 #imgg{
-background-size: cover;
+    background-size: cover;
     width: 100%;
     height: 350px;
     background-position-x: center;
     background-position-y: center;
+}
+#imgg2{
+    background-size: cover;
+    background-position-y: center;
+    height: 350px;
 }
 #section{
 width: 90%;
@@ -115,7 +128,7 @@ width: 90%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 0;
-        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 15px;
         max-width: 1025px;
         margin: 0 auto;
@@ -280,7 +293,12 @@ width: 90%;
         height: 350px;
         width: 300px;
         margin:0 auto;
-        transform: scale(0.5);
+        transform: scale(0.9);
+        box-shadow: 2px 2px 5px black;
+    }
+    .caja:hover{
+        transition: all 1s ease;
+        transform: scale(0.95)
     }
     .caja a{
         position: absolute;
@@ -311,33 +329,14 @@ width: 90%;
         overflow-x: hidden;
     }
     #contenedor-main{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "form1"
-                             "form2";
-        grid-gap: none;
-        width: 100%;
+        width: 90%;
         margin:auto;
         max-height: 1000px;
         margin-top: 2.5%;
         margin-bottom: 2.5%;
-    }
-    .formulario1{
-        grid-row-start: form1;
-        grid-row-end: form1;
-        width: 75%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        border: 1px solid #ccc;
+        box-shadow:2px 2px 5px black;
     }
     .formulario2{
-        grid-row-start: form2;
-        grid-row-end: form2;
         margin-right: 10px;
         width: 75%;
         text-align: center;
@@ -348,18 +347,11 @@ width: 90%;
         margin: auto;
         margin-top: 15px;
         margin-bottom: 5px;
-        border: 1px solid #ccc;;
     }
     .link-s{
         color: blue;
         cursor: pointer;
         text-decoration: underline;
-    }
-    span{
-        font-size: 12px;
-    }
-    h4{
-        font-size: 20px;
     }
     .campo-r::after{
         content: '*campo obligatorio*';
@@ -374,10 +366,6 @@ width: 90%;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    p{
-        margin-top: 10px;
-        margin-bottom: 16px;
     }
 
     /* FIN CONTACTO */

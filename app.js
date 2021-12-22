@@ -3,8 +3,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session')
+
 
 require('dotenv').config(); // para que cargue los datos del .env
+
 
 //ser hanglebars middleware
 
@@ -27,6 +30,7 @@ var subcomisionesRouter = require('./routes/subcomisiones');
 var valoresRouter = require('./routes/valores');
 var viajesRouter = require('./routes/viajes');
 var loginRouter = require('./routes/admin/login');
+var novedadesAdmRouter = require('./routes/admin/novedades');
 
 const exp = require('constants');
 
@@ -42,6 +46,27 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { maxAge: 60000 },
+}))
+
+secured = async function (req,res, next){
+  try{
+    console.log(req.session.id_usuario);
+      if(req.session.id_usuario){
+        next()
+      }else{
+        res.redirect('/admin/login')
+      }
+    }
+  catch(error){
+    console.log(error);
+  }
+}  // cierra secured
 
 app.use('/', indexRouter);
 app.use('/administracion', administracionRouter);
@@ -62,7 +87,7 @@ app.use('/subcomisiones', subcomisionesRouter);
 app.use('/valores', valoresRouter);
 app.use('/viajes', viajesRouter);
 app.use('/admin/login', loginRouter);
-
+app.use('/admin/novedades',secured, novedadesAdmRouter)
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

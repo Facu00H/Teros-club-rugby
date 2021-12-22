@@ -18,7 +18,7 @@
         letter-spacing:20px;
         position: absolute;
         top: 50%;   
-        left: 3%;
+        left: 17%;
         margin: 0 auto;
         background-size: cover;
         background-clip: text;
@@ -26,11 +26,10 @@
         -webkit-text-stroke:2px rgb(255, 255, 255);
         max-height: 500px;
         color: rgba(27, 27, 27, 0.85);
-        
     }
     .centrado::after {
         content: " RUGBY CLUB ";
-        font-size:30%;
+        font-size:35%;
         text-transform:uppercase;
         font-weight:900;
         letter-spacing:12px;
@@ -47,7 +46,7 @@
     }
     .centrado::before {
         content: " LOS ";
-        font-size:30%;
+        font-size:35%;
         text-transform:uppercase;
         font-weight:900;
         letter-spacing:12px;
