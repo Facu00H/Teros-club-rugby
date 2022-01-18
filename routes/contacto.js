@@ -16,9 +16,10 @@ router.get('/', function(req, res, next) {
     var email = req.body.email;
     var texto = req.body.texto;
     var obj={
+      from: email,
       to: 'asd@gmail.com',
-      subject: 'Contacto desde x web',
-      html: nombre + ' Se contacto a traves de la web y quiere saber mas info a este correo ' + email + ' <br> y su mensaje es: ' + texto + '.',
+      subject: 'Consulta terosRC',
+      html: 'Emisor: ' + nombre + '<br>' + 'Su mail: ' + email + '<br>' + 'Su mensaje: ' + texto,
     }
 
     var teros = nodemailer.createTransport({
